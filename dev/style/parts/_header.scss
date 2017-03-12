@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  min-height: 120px;
+  border-bottom: 1px solid #4b4a4b;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 0 95px 0 30px;
+  }
+
+  &__title{
+    font-size: 40px;
+    line-height: 1;
+    font-family: "Roboto";
+    color: #fffcf4;
+
+    &-span {
+      font-size: 48px;
+      font-style: italic;
+      color: #1dde85;
+    }
+  }
+}

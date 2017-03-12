@@ -1,0 +1,31 @@
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 0 1px 10px 1px;
+    font-size: 14px;
+    line-height: 2.571;
+    font-family: "Roboto";
+    color: #fffcf4;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #1dde85;
+      border-bottom-color: #1dde85;
+    }
+  }
+}
