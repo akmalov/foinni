@@ -1,0 +1,127 @@
+.welcome {
+  width: 100%;
+  background: #fffcf4;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 115px;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #454546;
+
+    &-span {
+      color: #1dde85;
+      text-transform: uppercase;
+    }
+  }
+
+  &__desc {
+    max-width: 900px;
+    margin-bottom: 75px;
+    font-size: 18px;
+    line-height: 1.67;
+    font-weight: 200;
+    color: #8f8e91;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 358px;
+    margin: 0 48px 48px 0;
+    padding: 35px 10px 20px 10px;
+    border: 1px solid #c3c1bf;
+
+    &_responsive {
+      border: 2px solid #1dde85;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &-picture {
+      margin-bottom: 8px;
+      background-image: url("../img/icons/welcome.png");
+      background-repeat: no-repeat;
+
+      &_development {
+        width: 40px;
+        height: 30px;
+        background-position: -92px -20px;
+      }
+
+      &_responsive {
+        width: 30px;
+        height: 28px;
+        background-position: -392px -20px;
+      }
+
+      &_clean-design {
+        width: 32px;
+        height: 29px;
+        background-position: -20px -20px;
+      }
+
+      &_graphic-design {
+        width: 36px;
+        height: 21px;
+        background-position: -172px -20px;
+      }
+
+      &_photography {
+        width: 32px;
+        height: 26px;
+        background-position: -320px -20px;
+      }
+
+      &_photo-editing {
+        width: 32px;
+        height: 32px;
+        background-position: -248px -20px;
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 1.875;
+      font-weight: 700;
+      color: #454546;
+
+      &_responsive {
+        color: #1dde85;
+      }
+    }
+
+    &-desc {
+      font-size: 14px;
+      line-height: 2.14;
+      font-weight: 200;
+      color: #8f8e91;
+      text-align: center;
+
+      &_responsive {
+        color: #454546;
+      }
+    }
+  }
+}
