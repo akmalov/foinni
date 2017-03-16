@@ -1,0 +1,129 @@
+.meet-us {
+  width: 100%;
+  background: #fffcf4;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 70px;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #454546;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 423px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 268px;
+    height: 355px;
+    margin: 0 30px 50px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      width: 273px;
+      height: 391px;
+      margin-bottom: 32px;
+
+      &:after {
+        display: block;
+      }
+
+      .meet-us__item-text-block {
+        margin-bottom: 80px;
+        background: none;
+      }
+
+      .meet-us__item-socials {
+        display: flex;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #2cda8a;
+      opacity: 0.8;
+      z-index: 5;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &-text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 68px;
+      color: #fffcf4;
+      background-color: rgba(69, 69, 70, 0.941);
+      text-align: center;
+      z-index: 10;
+    }
+
+    &-person {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    &-work {
+      font-size: 14px;
+      line-height: 1.5;
+      font-weight: 200;
+    }
+
+    &-socials {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 38px;
+      margin-bottom: 48px;
+      border-top: 1px solid #97ecc3;
+      border-bottom: 1px solid #97ecc3;
+      z-index: 10;
+
+      &-link {
+        margin-right: 17px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .fa {
+        font-size: 18px;
+        color: #fffcf4;
+      }
+    }
+  }
+}
