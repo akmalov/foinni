@@ -119,10 +119,18 @@
       border: 1px solid #9c9a97;
       cursor: pointer;
 
+      &:hover {
+        background: darken(#fffcf4, 15%);
+      }
+
       &_green {
         color: #fffcf4;
         border-color: #1dde85;
         background: #1dde85;
+
+        &:hover {
+          background: darken(#1dde85, 10%);
+        }
       }
     }
   }
